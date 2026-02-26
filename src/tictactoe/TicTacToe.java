@@ -13,13 +13,13 @@ public class TicTacToe {
      once winner is announced, then we cannot enter value to any cell
      invalid cell position will throw an error
 
-     BoardGame - Board, Player 1&2, Player Winner, GameContext context
+     BoardGame - Board, HumanPlayer 1&2, HumanPlayer Winner, GameContext context
                - play(), getWinner(),
      Board - contains 3x3 cells
            - placeSymbol(), isValidCell()
      Cell - Symbol as attribute
      Symbol as ENUM - EMPTY, X, O
-     Player - name, Symbol, PlayerStrategy
+     HumanPlayer - name, Symbol, PlayerStrategy
             - makeMove()
      GameContext - currentState
                   - nextState()
