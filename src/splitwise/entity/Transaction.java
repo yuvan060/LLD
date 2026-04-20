@@ -4,13 +4,13 @@ import splitwise.enums.TransactionStatus;
 import java.time.LocalDateTime;
 
 public class Transaction {
-    private String transactionId;
-    private User fromUser;      // payer
-    private User toUser;        // payee
-    private double amount;
-    private String description;
+    private final String transactionId;
+    private final User fromUser;      // payer
+    private final User toUser;        // payee
+    private final double amount;
+    private final String description;
     private TransactionStatus status;
-    private LocalDateTime createdAt;
+    private final LocalDateTime createdAt;
     private LocalDateTime completedAt;
 
     public Transaction(String transactionId, User fromUser, User toUser, double amount, String description, TransactionStatus status) {
